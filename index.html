@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>parallax</title>
+<style type="text/css">
+	*,*:before, *after{
+		padding:0;
+		margin:0;
+		border:0;
+		box-sizing: border-box;
+	}
+	html,body{
+		height:100%;
+	}
+	.wrapper{
+		width:100%;
+		min-height:100%;
+		overflow:hidden;
+	}		
+	.page{
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;	
+	}
+	.parallax{
+		position:relative;
+		height:100%;	
+	}
+	.parallax_mountain{
+		position:fixed;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	}
+	.parallax_mountain_1{
+		background:url('images/m_1.png') 0 0 / cover no-repeat;
+	}
+	.parallax_mountain_2{
+		z-index: 1;
+		background:url('images/m_2.png') bottom right/ 45% no-repeat;
+	}
+	.parallax_mountain_3{
+		z-index: 1;
+		background:url('images/m_3.png') bottom left/ 100% no-repeat;
+	}
+
+	.parallax_fog{
+		background:url('images/fog_1.png') bottom / 100% no-repeat;
+		position:fixed;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		z-index:2;
+
+	}
+
+	.content{
+		position:relative;
+	}
+	.content_body{
+		max-width:970px;
+		margin: 0 auto;
+	}
+	.content_header{
+		text-align: center;
+		text-transform:uppercase;
+		margin-bottom: 20px;
+		padding:0px 20px;
+	}
+	.content_title{
+		font-size: 200px;
+	}
+	.content_subtitle{
+		font-size: 120px;
+	}
+	.content_article{
+		background-color:rgba(255,255,255,0.5);
+		padding:25px;
+		font-size:18px;
+		line-height: 24px;
+	}
+	.content_article p{
+		margin-bottom: 20px;
+	}
+
+</style>	
+</head>
+<body>
+<div class="wrapper">
+	<div class="page">
+		<div class="parallax">
+			<div class="parallax_mountain parallax_mountain_1"></div>
+			<div class="parallax_mountain parallax_mountain_2"></div>
+			<div class="parallax_mountain parallax_mountain_3"></div>
+			<div class="parallax_fog"></div>
+		</div>
+		<div class="content">
+			<div class="content_body">
+				<div class="content_header">
+					<h1 class="content_title">Hello</h1>
+					<h2 class="content_subtitle">I am a Web Developer!</h2>
+				</div>
+				<div class="content_article">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+var year = 2019;
+year++;
+
+alert("Happy New "+year+" Year!");	
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
